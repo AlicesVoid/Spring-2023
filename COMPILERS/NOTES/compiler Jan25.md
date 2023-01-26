@@ -55,4 +55,6 @@
             - Determines the Tokens Recognized in a Lexical Analyzer
         - [Parse_Tree]
             - Boolean-Math Tree that displays logical argument of code
+        - `How many Tokens are in _`
+            - Coherent Token Lines stick Together 
             
