@@ -1,6 +1,6 @@
-# Jan 31st Software Design Class #
+# Jan 31st Software Design Class: #
 
-## CHAPTER 5: AGILE DEVELOPMENT ##
+## CHAPTER 5: AGILE DEVELOPMENT ######################################
 
 **Agile Development**
     *Manifesto*
@@ -113,7 +113,7 @@
         - know the models and the tools you use to create them 
         - adapt locally 
 
-## CHAPTER 10: CONCEPTION ##
+## CHAPTER 10: CONCEPTION ############################################
 
 **Understanding Requirements**
     *Engineering Requirements*
@@ -197,7 +197,7 @@
         - Elements:
             `Pattern Name`
             `Intent`
-            `Motivation`
+            `Motivation`: scenario showing how the pattern is useful
             `Forces and Context`: external issue & use-case setting   
             `Solution`
             `Consequences`: What happens when it is applied?
