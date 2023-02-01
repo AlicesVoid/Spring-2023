@@ -1,3 +1,222 @@
 # Jan 31st Software Design Class #
 
 ## CHAPTER 5: AGILE DEVELOPMENT ##
+
+**Agile Development**
+    *Manifesto*
+        - Individuals and Interactions > Processes and Tools 
+        - Working Software             > Comprehensive Documentation
+        - Customer Collaboration       > Contract Negotiation
+        - Responding to Change         > Following a Plan
+    *Agility*
+        - Effective Response to Change
+        - Effective Communication among all Stakeholders
+        - Drawing the Customer onto the Team 
+        - Organizing a Team so that it is in control of the Workload
+        - Rapid, Incremental Delivery of Software   
+        `The Cost of Change` -> MINIMIZED in Agile Process
+    *Agile Process*
+        - Driven by Customer Descriptions of what is required
+        - Recognized that plans are Short-Lived
+        - Develops software Iteratively w/ emphasis on Construction 
+            - Delivers multiple 'Software Increments'
+        - Adapts as Changes occur
+        `Agility Principles` Ch 5 pg 6-7 (I'm not writing that lol...)
+    *Human Factors*
+        - Process MOLDS TO THE NEEDS OF THE PEOPLE/TEAM 
+        - key traits necessary in people/team:
+              competence, common focus, collaboration, decision-making
+              general problem-solving, mutual trust/respect,
+              self-organization
+
+**Extreme Programming (XP)**
+    - (was once the) most widely adpoted agile process, by Ken Beck
+    *XP Planning*
+        1. create `user stories` to visualize program use
+        2. agile team assesses stories & assigns a `cost` to each
+        3. stories are grouped to form a `deliverable increment`
+        4. a `commitment` is made on the delivery date
+        5. after 1st-increment, `project velocity` is important:
+            - helps define subsequent delivery dates for increments
+    *XP Design*
+        - follows the `KIS Princple`
+        - encourages the use of `CRC Cards` (Chapter 8)
+        - difficult problems -> suggest `spike solutions`  (prototype)
+        - encourages `refactoring`   (refining program design process)
+    *XP Coding*
+        - Recommends the `construction of a unit test` Before coding
+        - encourages `pair programming` (1 person codes, 1 watches)
+    *XP Testing*
+        - All `unit tests are executed daily`
+        - `Acceptance Tests` are defined by the customer
+            - executed to asses customer visible functionality
+    **THE WHOLE XP METHOD**
+        1.`Planning`(user stories, values, iteration plan, test setup)
+        2.`Design`   (simple design, CRC, spike solutions, prototypes)
+        3.`Coding`     (pair programming, unit-test cont. integration)
+            a. Refactoring
+        4.`Testing`  (unit-test cont. integration, acceptance-testing)
+            a. Release Software Increment    (proj. velocity computed)
+
+**Adaptive Software Development(ASD)**
+    - proposed by Jiom Highsmith 
+    *ASD Distinguishing Features*
+        - `mission-driven` planning
+        - `component-based` focus
+        - uses `time-boxing` (Chapter 24)
+        - explicit consideration of `risks`
+        - emphasizes `collaboration` for requirements gathering
+        - emphasizes `learning` throughout the process
+    *ASD Model*
+        1. Speculation
+        2. Collaboration
+        3. Learning 
+            a. Release Software Increment 
+    
+**SCRUM**
+    - proposed by Schwaber and Beedle
+    *SCRUM Distinguishing Features*
+        - dev work is partitioned into `packets`
+        - `testing & documentation are ongoing` as project is built 
+        - works occurs in `sprints` and is derived from a `backlog`
+            - backlog -> existing requirements are kept on-tab
+        - `meetings are very short` and sometimes without chairs!
+        - `demos` are delivered to customer w/ allocated time box
+
+**Crystal**
+    - proposed by Cockburn and Highsmith
+    *Crystal Distinguishing Features*
+        - actually a `family of process models` 
+            - allows for `manuverability` based on problem cases
+        - `face to face communication` is emphasized
+        - suggest the use of `reflection workshops` 
+            - review work habits of the team
+
+**Feature Driven Development (FDD)**
+    - proposed by Peter Coad 
+    *FDD Distinguishing Features*
+        - emphasis on defining `features`:
+            "is a client-valued function that- 
+            -can be implemented in two weeks or less"
+        - uses a `feature template`:
+            - ex: <action> the <result> <by | for | of | to > <object>
+        - `features list` is created, `plan by feature` is conducted 
+        - design and construction merge in FDD
+
+**Agile Modeling**
+    - proposed by Scott Ambler
+    *Agile Modeling Principles*
+        - model with a purpose
+        - use multiple models
+        - travel light
+        - content is more important than representation
+        - know the models and the tools you use to create them 
+        - adapt locally 
+
+## CHAPTER 10: CONCEPTION ##
+
+**Understanding Requirements**
+    *Engineering Requirements*
+        - `Inception`: ask a set of questions that establish:
+            1. basic understanding of problem
+            2. the people who want a solution
+            3. the nature of the solution that is desired, and
+            4. the effectiveness of communication btwn. dev & customer
+        - `Elicitation`: elicit requirements from all stakeholders
+        - `Elaboration`: create an analysis model that identifies
+            data, function, and behavioral req.s
+        - `Negotiation`: agree on deliverable system that is realistic
+        - `Specification`: some medium to base discussion on:
+            ex: written doc.s, set of modes/use-cases,...
+        - `Validation`: review mechanisms that look for 
+            errors, unclarified areas, missing info, conflicts,... 
+        - `Requirements Management`: self-explanatory
+        *Inception*
+            - Identify Stakeholders
+                - who else do you think I should talk to?
+            - Recognize multiple points of view
+            - Work towards collaboration
+            - `The First Questions`:
+                - who is behind the work request?
+                - who will use the solution?
+                - what will be the economic benefit of the solution?
+                - is there another source for the solution you need?
+        *Eliciting Requirements*
+            - meetings are conducted/attended by Customers & Dev.s 
+            - rules for prep. & participation are established
+            - an agenda is suggested
+            - a "facilitatior" (anyone) controls the meeting
+            - a "definition mechanism" (medium for presenting) is used
+            - `the goal`:
+                1. Identify the Problem
+                2. Propose Elements of the Solution
+                3. Negotiate Different Approaches, and 
+                4. Specify a Preliminary Set of Solution Req.s
+        *Quality Function Development*
+            - `Function Development` determines the "value" of func.s
+                value is perceived by the Customer
+            - `Information Deployment` identifies data objects/events
+            - `Task Deployment` examines the behavior of the system
+            - `Value Analysis` determines a relative priority of req.s
+        *Elicitation Work Products*
+            - statement of need and feasibility
+            - bound statement of scope for system/project
+            - list of customers/users/stakeholders who're involved
+            - description of the system's tech. environment
+            - list of requirements & their personal domain constraints
+            - a set of usage scenarios that provide insight into use 
+            - any prototypes developed to better-define requirements
+    
+**Building the Analysis Model:**
+    *Functional Requirements:*
+        `scenario-based elements`: descriptions of use-cases
+            - also, processing narratives for software functions
+           `class-based elements`: implied by scenarios
+            `behavioral elements`: state diagram
+         `flow-oriented elements`: data flow diagram
+    *Non-Functional Requirements:*
+        `define system attributes`: what do different var/func.s do???
+        `security`: can endure common classes of attacks
+        `reliability`: 99% uptime, no crashing, address failures
+        `performance`: target platforms, concurrent users, metrics etc
+        `maintainability`: regular updates, content rotation, extenda-
+        `scalability`: ability to deal with demand fluctuations timely
+        `usability`: user experience, reduce friction, best UI prac.s
+    *Use-Cases*
+        - a collection of user-scenarios that describe the sys.s usage
+        - each scenario is from the "POV" of an "Actor"
+        - [Scenarios]: Ch 10 page 10 (I'm not writing that)
+    **Diagrams**
+        *Class Diagram*
+            - Table Categories: 
+                - Name, Variable Names, Functions
+        *State Diagram*
+            - Table Categories:
+                - Name, Variable Values, Activities
+    *Analysis Patterns*
+        - Elements:
+            `Pattern Name`
+            `Intent`
+            `Motivation`
+            `Forces and Context`: external issue & use-case setting   
+            `Solution`
+            `Consequences`: What happens when it is applied?
+            `Design`
+            `Known Uses`
+            `Related Patterns`: is this a common type of pattern use? 
+    *Negotiating Requirements*
+        - `identify the key stakeholders`
+        - `determine each of the stakeholders "win-con.s" `
+            not always obv.
+        - `Negotiate`
+            work towards req.s set that is a "win-win"
+    
+**Validating Requirements**
+    - is each requirement consistent w/ overall objective for product?
+    - have all requirements been specified to the proper abstractions?
+    - is the requirement necessary? or is it more of an add-on?
+    - is each req. bounded or unambiguous?
+    - does each req. have attribution(s) for importance?
+    - is each req. achievable in it's respective environment?
+    - does the req.s model properly reflect the system application?
+    - have req. patterns been used to simplify the req.s model?
