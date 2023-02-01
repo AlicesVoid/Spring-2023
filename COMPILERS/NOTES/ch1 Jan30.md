@@ -1,0 +1,1 @@
+# Jan 30.th Ch1 Notes (MAKING THESE UP I THINK?) #

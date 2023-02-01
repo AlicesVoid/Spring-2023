@@ -73,5 +73,10 @@
         `--decorate` `--oneline`
     `git add <file>` -> self-explanatory `--all`
     `git commit -m "message"` -> self-explanatory  
-    `git branch <name>` -> creates a branch  
+    `git branch   <name>` -> creates a branch  
+    `git checkout <name>` -> switch branch `-b`
+    `git switch <name>` -> switch branches 
+        `--create` -> self-explanatory (`-c` also)
+        `-` -> return to last-visited branch
+
                 
