@@ -64,6 +64,14 @@
             <while> {statement}:     Evaluate Header Expression
                 <suite>              Do This until Header == True
             
-            
+## GIT CRASH COURSE ##############################################
 
+**COMMANDS LIST**
+    `git init`       -> create empty repository
+    `git status`     -> files committed status
+    `git log`        -> shows version history 
+        `--decorate` `--oneline`
+    `git add <file>` -> self-explanatory `--all`
+    `git commit -m "message"` -> self-explanatory  
+    `git branch <name>` -> creates a branch  
                 
