@@ -8,21 +8,21 @@
         - has unique identity, has own properties 
     [Attributes]
         the properties that describe an entity:
-        - can be [Composite] or [Simple] (can/cannot be sub-parted)
+        - can be `Composite` or `Simple` (can/cannot be sub-parted)
         - can be made of one or more Values
-        - can be [Stored], or [Derived] from other attributes
-        - can be made irrelevant or unknown ([NULL])
-        - can be [Complex]: (includes [Composite] and [Multi-Var.])
-        - can be [Key-Attributes]: (unique per entity)
-        - has a  [Domain]: (all valid values that can be assigned)
+        - can be `Stored`, or `Derived` from other attributes
+        - can be made irrelevant or unknown (`NULL`)
+        - can be `Complex`: (includes `Composite` and `Multi Var.`)
+        - can be `Key Attributes`: (unique per entity)
+        - has a  `Domain`: (all valid values that can be assigned)
     *(an) Entity Type:*
         - defines a Set of Entities that have the same Attributes
         - analagous to `Template` Classes in OOP
     *(an) Relationship Type:*
         - defines a Set of Associations among the same Entities
-        - [Degree]: the number of participating Entity Types it has
-        - [Cardinality_Ratio]: ratio showing the # of possible participants for a Relationship Type
-        - [Participation_Constraints]: partial vs. toatl participation
+        - `Degree`: the number of participating Entity Types it has
+        - `Cardinality Ratio`: ratio showing the # of possible participants for a Relationship Type
+        - `Participation Constraints`: partial vs. toatl participation
     *Attributes of a Relationship Type:*
         - Some attributes cannot be moved to any single Entity Type 
         - They are better suited as attributes of Relationship Types
