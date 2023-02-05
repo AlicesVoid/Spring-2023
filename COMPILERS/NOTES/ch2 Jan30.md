@@ -101,3 +101,27 @@
                 `N’([P1, P2, ...Pn], x ∈ Σ’)` = 
                     `N(P1, x ) U N(P2,x) U...` 
                         `...U ∈ N (Pn,x) in [   ]`
+    *Notes:*
+        - Q has n states ~ -> Q' = 2^Q has 2^n states
+            - n = 5, Q' = 32
+            - Impractical
+        - Remove Unnecessary/Impractical States 
+            - some states can't be reached n such
+        - Build DFSM with a MINIMUM NUMBER OF STATES
+    *Getting Rid of Epsilon Translations*
+        `ε-closure` of a state `q ∈ Q, ε(q)`
+            - set of all states reach-able from q through `ε-trans.`
+        `ε-closure` of a state `R ⊆ Q, ε(R)`
+            - `q` that can be reached from some `r ∈ R` through `ε`
+        [METHOD:]
+            `Input:`
+                a NFSM N = (Q, Σ, δ, q0, F) 
+            `Output:`
+                a DFSM M = (Q' ,Σ' ,δ' , q.0' ,F' ), where:
+                    Q'   = 2^Q 
+                    δ'   : Q'  × Σ' → Q′
+                    q.0' = ε(q.0)
+                    F  = { R ∈ Q  | f ∈ R for some f ∈ F }
+            *Note:*
+                δ (R,σ) =   [U]`ε( δ(r,σ) ) r ∈ R`
+                - remove states that Cannot be Reached from DFSM
