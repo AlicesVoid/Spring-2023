@@ -32,10 +32,10 @@
             - N is a Deterministic Function
             - If N is not fully determined, use a Null State 
     *FSM as a Graph*
-        `State`            |[Circle]
-        `Start State`      |[Circle] [Pointed-At]
-        `Accepting State`  |[Circle] [Bordered]
-        `Transition`       |[Circle] [Variable-Line] [Circle-Connect] 
+        `State`            | [Circle]
+        `Start State`      | [Circle] [Pointed-At]
+        `Accepting State`  | [Circle] [Bordered]
+        `Transition`       | [Circle] [Variable-Line] [Circle-Connect] 
     *Transitions*
         In-State -> (a) -> Out-State
             - if (a), then go to Out-State
