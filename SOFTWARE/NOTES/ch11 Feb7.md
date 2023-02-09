@@ -68,3 +68,35 @@
                 a. if not, then: Problem Space 
     *Class-Responsibility-Collaborator (CRC) Model*
         Source: `ch.11 pg.32`
+
+# Feb. 9.th Software Engineering Notes ############################################################################################################################################
+
+## Ch.11: CRC Models n Shit ## 
+
+**The CRC Model:**
+    Separate each Class' val.s in 3 parts:
+        1. [Class]           -> Description:
+        2. [Responsibility]  -> Responsibilities of Class
+        3. [Collaborator]    -> For Individual Responsibilities
+    *Class Types*
+        `Entity     Classes` -> Models taken from Problem Statement
+        `Boundary   Classes` -> used to Create Interface
+        `Controller Classes` -> manage a "`Unit of Work`"
+            -> creation, update, instantiation of boundaries, etc-
+    *Responsibilities*
+        1. System Intelligence should be distributed Affectively
+        2. Responsibilities are to be stated Generally
+        3. Info and Behavior    should reside in the Same Class
+        4. Holistic-Information should reside in the Same Class
+        5. Responsibilities should be Shared among Classes if neces-
+    *Collaboators*
+        1. Identify Relationships Between Classes
+        2. Identified by whether a Class can Fullfil Alone or Not
+        3. Three Generic Relationships:
+            a. `is-part-of`, `has-knowledge-of`, `depends-upon`
+    [NOTES:]
+        `Composite Aggregate Class` -> Multiple Classes for a Class
+            (ex: playerHead -> Player, and so on-)
+        `Associations` -> Multiplicity (Classes are Related)
+        `Dependency`   -> Classes Need Something to Relate Eachother
+        `Packages`     -> Multiple Classes are part of a Bigger Thing!
