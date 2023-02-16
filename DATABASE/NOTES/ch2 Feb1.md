@@ -22,7 +22,7 @@
         - defines a Set of Associations among the same Entities
         - `Degree`: the number of participating Entity Types it has
         - `Cardinality Ratio`: ratio showing the # of possible participants for a Relationship Type
-        - `Participation Constraints`: partial vs. toatl participation
+        - `Participation Constraints`: partial vs. total participation
     *Attributes of a Relationship Type:*
         - Some attributes cannot be moved to any single Entity Type 
         - They are better suited as attributes of Relationship Types
