@@ -72,3 +72,7 @@
         - `Language L` is a `CFL` if `∃ a CFG G s.t. L = L(G)`  
     *HOW TO SOLVE!?*  
         - Literally Just Execute the Steps until you Solve or Fail2
+    *Theorem 2:*
+        - For every RL `L`, there exists a `CFG G` s.t. `L=L(G)`
+        [COROLLARY:] 
+            - every RL is a CFL | all RLs are proper subclasses of CFLs  
