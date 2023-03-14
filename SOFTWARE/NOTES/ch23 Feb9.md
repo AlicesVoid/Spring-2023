@@ -22,8 +22,7 @@
     *Defect-Math:*
                 E.review = E.p + E.a + E.r 
                 Err.tot  = Err.min + Err.maj
-        `Defect Density` = Err.tot / WPS
-        [LEGEND:]
+        `Defect Density` = Err.tot / WPS    
             [E.p] -> `Preparation Effort` (in-person hours)
             [E.a] -> `Assessment  Effort` (in-person hours)
             [WPS] -> `Work Product Size`  (measurable |db| model)

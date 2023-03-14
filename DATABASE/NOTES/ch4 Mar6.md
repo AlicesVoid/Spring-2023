@@ -21,7 +21,12 @@
     CARTESIAN PRODUCT: `R x S => adds Columns of BOTH, Rows * Rows`    
     INTERSECTION     : `looks for EXACT DATA MATCHES`  
     SET DIFFERENCE   : `removes INTERSECTING ELEMENTS from BOTH`  
-
-**COMPLEX METHODS:**
-    JOIN    : `θ <condition> (S) = σ <condition> (R x S)`
-        {ex : θ <STUDENT.SSN=ENROLL.SSN>[ENROLL] = [STUDENT]*[ENROLL]
+  
+**COMPLEX METHODS:**  
+    JOIN    : `θ <condition> (S) = σ <condition> (R x S)`  
+        {ex : θ <STUDENT.SSN=ENROLL.SSN>[ENROLL] = [STUDENT]*[ENROLL]  
+  
+### Summary of Relational Algebra:  
+ **Aggregate Operations:**
+    - represented with the french "F" 
+        {ex : `<grouping attribute> F <func. list> (R)`}

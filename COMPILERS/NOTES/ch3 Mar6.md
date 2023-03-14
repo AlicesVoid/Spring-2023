@@ -59,14 +59,67 @@
     `2. Parser` | Method for `validating & building the sequence tree`  
   
 ### Parsers Introduction (not as important)  
- **NOTABLE INFO:**
+ **NOTABLE INFO:**  
     - The `syntactic analyzer / parser` -> Heart of the frontend compiler  
-    - Most languages are Not Completely Described by `CFGs`
-    - `Grammars` are most useful for developing `infinite sequences
-
-### Chomsky Grammar Conventions:
- **CONVENTION METHODS:**
-    - `non-terminals` | represented by CAPITAL LETTERS
+    - Most languages are Not Completely Described by `CFGs`  
+    - `Grammars` are most useful for developing `infinite sequences  
+  
+### Chomsky Grammar Conventions:  
+ **CONVENTION METHODS:**  
+    - `non-terminals` | represented by CAPITAL LETTERS  
     - `terminals`     | represented by lowercase letters    (a,b,c,etc-)  
     - `terminal-strings` | represented by lowercase letters (z,y,x,etc-)  
-    - `mixed-content`    | represented by lowercase greek letters
+    - `mixed-content`    | represented by lowercase greek letters  
+ **NOTE:**  
+    - The language of a CFG is called a Context Free Language  
+  
+### CFG Representation  
+ **(Backus-Naur(Normal) Form) Notation:**  
+    - BNF grammars = Context Free Grammars  
+    - Extended BNF   
+    - Chomsky Normal Form (CNF)  
+    - Syntax Diagrams  
+    *BNF NOTATION:*  
+        - method to notate productions:  
+        - `::=` represents arrows in diagrams  
+        - `< >` represents nonterminals  
+        [EXAMPLES:]  
+            - <expr> ::= <expr> + <term> | <expr> - <term> | <term>  
+    *EXTENDED (E)BNF:*  
+        - Includes more notations:  
+        - `{ }` -> 0 or more times  
+        - `[ ]` -> Optional  
+ **Derivation:**  
+    - Replacing nonterminals with symbols to define sentences   
+    [EXAMPLE:]   
+        - see ch.3 pg 23  
+    *FORMS:*  
+        - `Sentenial Form`        | strings of symbols in derivation steps  
+        - `Left Most Derivation`  | in each step, replace leftmost n.t.    
+        - `Right Most Derivation` | in each step, replace rightmost n.t.   
+        [DEFINITION:]  
+            - The Language Represented by a CFG is the set of all strings for which there exists a derivation starting from the starting symbol S: `CFG(L) = L(G) ={x| S=>*x}`  
+        [AMBIGUITY:]  
+            - Some Grammars are unambiguous from eachother (they represent the same grammars within a specific language)  
+            - This applies to Most programming languages  
+  
+### Chomsky Normal Form (CNF)  
+ **CNF:**  
+    - NOT CFG !!!   
+    - productions must have either 2 nonterminals or 1 rhs terminal  
+    - Cannot Include ε or unit productions  
+    *METHOD:*  
+        Write new Productions to parse-apart other productions:  
+        - `X_a -> a` where a is a non-terminal and X_a`  
+ **Push-Down Automata (PDA):**  
+    - `7 Tuples -> FSA{Q,Σ,δ,q_0,F} + Stack{Γ,Z}`
+    - represents a machine that writes parsing operations  
+    *METHODS:*  
+        1. Read a symbol from the Input (or not)  
+        2. Push a string onto the stack  
+        3. Pop a string off the stack  
+        4. Change state  
+        5. Accept if stack is Z_0 and input stream is empty  
+  
+
+
