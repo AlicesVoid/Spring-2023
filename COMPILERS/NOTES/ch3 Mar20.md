@@ -26,11 +26,23 @@
         - Start at the Root, end at a Leaf  
         `Eliminating Left Recursion` :  
             [METHOD:]  
+                - remove left-most nt (ends recursion)  
                 - Introduce a new nonterminal   
                 - Modify the new Nonterminal to take an ε (empty)  
-            [EXAMPLE:]  
-                - A  → δA'  
-                - A' → aA' | ε (without ε , A' doesn't terminate)  
-    *Bottom-Up Parser:*  
-        - Starts at a Leaf, ends at the Root`  
+            [EXAMPLE:]   
+                `A → ABd | a`    
+                    1. `A → aA’ `  
+                    2. `A’ → BdA’ | ε` 
+        `Left Factoring` :
+            [METHOD:] 
+                - remove common factor
+                - Introduce a new nonterminal
+                - old nt takes common factor
+                - new nt takes the rest
+            [EXAMPLE:] 
+                `A → aBC | aBc | aCA`  
+                    1. `A → aA’ `  
+                    2. `A’ → AB | Bc | CA`  
+    *Bottom-Up Parser:*    
+        - Starts at a Leaf, ends at the Root`    
   
