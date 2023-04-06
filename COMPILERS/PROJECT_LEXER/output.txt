@@ -1,0 +1,9 @@
+TokenType | Lexeme
+
+KEYWORD | while
+SEPARATOR | (
+OPERATOR | <
+IDENTIFIER | lower)
+IDENTIFIER | r
+OPERATOR | =
+INTEGER | 28.00;
