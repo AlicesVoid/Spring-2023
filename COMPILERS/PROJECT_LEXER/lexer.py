@@ -19,6 +19,7 @@ class LexerCPP:
     def tokenize(self):
         # Regular expressions for integers, identifiers, operators, and separators
         integer_regex = r'\b\d+\b'
+        real_regex = r'-?\d+(\.\d+)?([eE][-+]?\d+)?'
         identifier_regex = r'\b[a-zA-Z_][a-zA-Z0-9_]*\b'
         operator_regex = r'[<>=+\-*/%]'
         separator_regex = r'[();]'
@@ -29,8 +30,12 @@ class LexerCPP:
         }
 
         # Iterate over each token in the input code
-        for token in self.cpp_code.split():
-            if re.match(integer_regex, token):
+        find_token_regex = r'\d+\.\d+|\w+|[()<>;=]|[-+*/]|(?:\|\||&&)'
+        for token in re.findall(find_token_regex, self.cpp_code):
+            if re.match(real_regex, token):
+                self.token_types.append('REAL')
+                self.lexemes.append(token)
+            elif re.match(integer_regex, token):
                 self.token_types.append('INTEGER')
                 self.lexemes.append(token)
             elif re.match(identifier_regex, token):

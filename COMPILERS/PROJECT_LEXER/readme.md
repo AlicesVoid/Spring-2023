@@ -8,6 +8,7 @@
   
 # Input Format:  
 This lexer is abridged, and does not include all C++ Methods for concision purposes. The methods supported by this lexer are:   
+- All Real Numbers 
 - All Integers  
 - All Identifiers  
 - All Arithmatic Operators  
