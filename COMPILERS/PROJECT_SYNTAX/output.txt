@@ -1,0 +1,71 @@
+Results* for Three Input Strings (as specified in the project)
+    *Results display the Terminal Output for PredictiveParser.py
+
+Input String 1: "(a+a)*a$"
+
+Terminal Output 1:
+Stack: ['$', 'Q', 'T']
+Stack: ['$', 'Q', 'R', 'F']
+Stack: ['$', 'Q', 'R', ')', 'E', '(']
+Stack: ['$', 'Q', 'R', ')', 'E']
+Stack: ['$', 'Q', 'R', ')', 'Q', 'T']
+Stack: ['$', 'Q', 'R', ')', 'Q', 'R', 'F']
+Stack: ['$', 'Q', 'R', ')', 'Q', 'R', 'a']
+Stack: ['$', 'Q', 'R', ')', 'Q', 'R']
+Stack: ['$', 'Q', 'R', ')', 'Q']
+Stack: ['$', 'Q', 'R', ')', 'Q', 'T', '+']
+Stack: ['$', 'Q', 'R', ')', 'Q', 'T']
+Stack: ['$', 'Q', 'R', ')', 'Q', 'R', 'F']
+Stack: ['$', 'Q', 'R', ')', 'Q', 'R', 'a']
+Stack: ['$', 'Q', 'R', ')', 'Q', 'R']
+Stack: ['$', 'Q', 'R', ')', 'Q']
+Stack: ['$', 'Q', 'R', ')']
+Stack: ['$', 'Q', 'R']
+Stack: ['$', 'Q', 'R', 'F', '*']
+Stack: ['$', 'Q', 'R', 'F']
+Stack: ['$', 'Q', 'R', 'a']
+Stack: ['$', 'Q', 'R']
+Stack: ['$', 'Q']
+Stack: ['$']
+Stack: []
+Input string is in the grammar
+
+----------------------------------------------------------------
+
+Input String 2: "a*(a/a)$"
+
+Terminal Output 2:
+Stack: ['$', 'Q', 'T']
+Stack: ['$', 'Q', 'R', 'F']
+Stack: ['$', 'Q', 'R', 'a']
+Stack: ['$', 'Q', 'R']
+Stack: ['$', 'Q', 'R', 'F', '*']
+Stack: ['$', 'Q', 'R', 'F']
+Stack: ['$', 'Q', 'R', ')', 'E', '(']
+Stack: ['$', 'Q', 'R', ')', 'E']
+Stack: ['$', 'Q', 'R', ')', 'Q', 'T']
+Stack: ['$', 'Q', 'R', ')', 'Q', 'R', 'F']
+Stack: ['$', 'Q', 'R', ')', 'Q', 'R', 'a']
+Stack: ['$', 'Q', 'R', ')', 'Q', 'R']
+Stack: ['$', 'Q', 'R', ')', 'Q', 'R', 'F', '/']
+Stack: ['$', 'Q', 'R', ')', 'Q', 'R', 'F']
+Stack: ['$', 'Q', 'R', ')', 'Q', 'R', 'a']
+Stack: ['$', 'Q', 'R', ')', 'Q', 'R']
+Stack: ['$', 'Q', 'R', ')', 'Q']
+Stack: ['$', 'Q', 'R', ')']
+Stack: ['$', 'Q', 'R']
+Stack: ['$', 'Q']
+Stack: ['$']
+Stack: []
+Input string is in the grammar
+
+----------------------------------------------------------------
+
+Input String 3: "a(a+a)$"
+
+Terminal Output 3:
+Stack: ['$', 'Q', 'T']
+Stack: ['$', 'Q', 'R', 'F']
+Stack: ['$', 'Q', 'R', 'a']
+Stack: ['$', 'Q', 'R']
+Input string is not in the grammar

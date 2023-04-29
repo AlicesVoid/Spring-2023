@@ -1,4 +1,4 @@
-# March 6.th Compiler Notes #   
+# March 20.th Compiler Notes #   
   
 ## Chapter 3: Syntactic Parsing 1 (Top-Down Parsing) ##  
   
@@ -33,16 +33,17 @@
                 `A → ABd | a`    
                     1. `A → aA’ `  
                     2. `A’ → BdA’ | ε` 
-        `Left Factoring` :
-            [METHOD:] 
-                - remove common factor
-                - Introduce a new nonterminal
-                - old nt takes common factor
-                - new nt takes the rest
-            [EXAMPLE:] 
-                `A → aBC | aBc | aCA`  
+        `Left Factoring` :  
+            (aka Backtracking)  
+            [METHOD:]  
+                - remove common factor  
+                - Introduce a new nonterminal  
+                - old nt takes common factor  
+                - new nt takes the rest  
+            [EXAMPLE:]   
+                `A → aBC | aBc | aCA`    
                     1. `A → aA’ `  
-                    2. `A’ → AB | Bc | CA`  
+                    2. `A’ → AB | Bc | CA`    
     *Bottom-Up Parser:*    
-        - Starts at a Leaf, ends at the Root`    
+        - Starts at a Leaf, ends at the Root`      
   
